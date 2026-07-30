@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Launcher — DLI</title>
+<meta name="description" content="The DLI Launcher: auto updates, file verification, Discord login and fast downloads — all in one lightweight app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loader" aria-hidden="true"><div class="loader-mark"><span></span><span></span></div></div>
+<div class="ambient" aria-hidden="true"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark"></span>DLI</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="launcher.html" aria-current="page">Launcher</a></li>
+      <li><a href="client.html">Client</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="cosmetics.html">Cosmetics</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="download.html" class="btn btn-primary btn-sm">Download</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">The Launcher</span>
+      <h1>One app to get you into any DLI game</h1>
+      <p class="lead">The launcher handles updates, verification and sign-in so your time goes to playing, not waiting.</p>
+      <div class="hero-cta" style="margin-top:32px;">
+        <a href="download.html" class="btn btn-primary btn-lg">Download the Launcher</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="showcase reveal">
+        <div class="showcase-inner">
+          <div class="showcase-chrome"><span></span><span></span><span></span></div>
+          <span class="text-secondary" style="font-family:var(--font-head);font-size:14px;">Launcher — Library View</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="feature-row">
+        <div class="reveal">
+          <span class="eyebrow">Always current</span>
+          <h2 style="margin-top:16px;">Auto updates, without the wait</h2>
+          <p class="text-secondary" style="margin-top:14px;">The launcher checks for new builds in the background and applies patches incrementally, so most updates finish before you've finished reading the changelog.</p>
+          <ul class="feature-list">
+            <li>Delta patching keeps downloads small</li>
+            <li>Updates apply while you browse cosmetics or news</li>
+            <li>Roll back to the previous build in one click if something looks off</li>
+          </ul>
+        </div>
+        <div class="mock-panel reveal"></div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="reveal">
+          <span class="eyebrow">Integrity, checked</span>
+          <h2 style="margin-top:16px;">File verification you never have to think about</h2>
+          <p class="text-secondary" style="margin-top:14px;">Every install is checksummed against the source build. If a file's missing or corrupted, the launcher repairs just that file — not a full reinstall.</p>
+          <ul class="feature-list">
+            <li>Per-file checksum verification on every launch</li>
+            <li>Targeted repair instead of full redownloads</li>
+            <li>A visible status log if you want to see what changed</li>
+          </ul>
+        </div>
+        <div class="mock-panel reveal"></div>
+      </div>
+
+      <div class="feature-row">
+        <div class="reveal">
+          <span class="eyebrow">Sign in once</span>
+          <h2 style="margin-top:16px;">Discord login, carried everywhere</h2>
+          <p class="text-secondary" style="margin-top:14px;">Connect your Discord account once and the launcher, client and community site all recognize you — no separate passwords to manage.</p>
+          <ul class="feature-list">
+            <li>OAuth sign-in, no new password to remember</li>
+            <li>Friends list synced from your Discord servers</li>
+            <li>Session stays active across launcher restarts</li>
+          </ul>
+        </div>
+        <div class="mock-panel reveal"></div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="reveal">
+          <span class="eyebrow">Built for speed</span>
+          <h2 style="margin-top:16px;">Fast downloads, wherever you are</h2>
+          <p class="text-secondary" style="margin-top:14px;">Content is served from a distributed edge network, so first installs and season updates move at your connection's real speed.</p>
+          <ul class="feature-list">
+            <li>Edge-cached delivery in 120+ regions</li>
+            <li>Automatic mirror selection, no manual server picking</li>
+            <li>Pause and resume without losing progress</li>
+          </ul>
+        </div>
+        <div class="mock-panel reveal"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <span class="eyebrow">Get started</span>
+        <h2 style="margin-top:18px;">Your library is one download away</h2>
+        <p>Install the launcher and sign in with Discord to get going.</p>
+        <div class="cta-row">
+          <a href="download.html" class="btn btn-primary btn-lg">Download the Launcher</a>
+          <a href="client.html" class="btn btn-ghost btn-lg">See the Client</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>DLI</a>
+        <p>A premium gaming ecosystem — launcher, client, cosmetics and community, built as one platform.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="launcher.html">Launcher</a>
+        <a href="client.html">Client</a>
+        <a href="features.html">Features</a>
+        <a href="cosmetics.html">Cosmetics</a>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <a href="community.html">Overview</a>
+        <a href="community.html#changelog">Changelog</a>
+        <a href="community.html#events">Events</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get started</h4>
+        <a href="download.html">Download</a>
+        <a href="download.html#requirements">System requirements</a>
+        <a href="download.html#install">Installation guide</a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> DLI Gaming Platform. All rights reserved.</span>
+      <div class="social-row">
+        <a href="community.html" aria-label="Discord">◈</a>
+        <a href="community.html" aria-label="GitHub">⌘</a>
+        <a href="community.html" aria-label="X / Twitter">✦</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

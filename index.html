@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DLI — Discover. Play. Connect.</title>
+<meta name="description" content="DLI is a premium gaming ecosystem — a custom launcher, client, cosmetics, seasons and community built for players who expect more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loader" aria-hidden="true"><div class="loader-mark"><span></span><span></span></div></div>
+<div class="ambient" aria-hidden="true"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark"></span>DLI</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="launcher.html">Launcher</a></li>
+      <li><a href="client.html">Client</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="cosmetics.html">Cosmetics</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="download.html" class="btn btn-primary btn-sm">Download</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Season 03 — Live now</span>
+        <h1>
+          <span class="line">Discover.</span>
+          <span class="line gradient-text">Play.</span>
+          <span class="line">Connect.</span>
+        </h1>
+        <p class="lead">DLI is the platform behind the games you'll play next — a custom launcher, a tuned client, and a community built to last, all under one account.</p>
+        <div class="hero-cta">
+          <a href="download.html" class="btn btn-primary btn-lg">Get DLI — it's free</a>
+          <a href="client.html" class="btn btn-ghost btn-lg">Explore the Client</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong data-count="2.4" data-decimals="1" data-suffix="M">0</strong><span>Players onboard</span></div>
+          <div><strong data-count="99.9" data-decimals="1" data-suffix="%">0</strong><span>Launcher uptime</span></div>
+          <div><strong data-count="120" data-suffix="+">0</strong><span>Countries reached</span></div>
+        </div>
+      </div>
+      <div class="orb-wrap reveal">
+        <div class="orb"></div>
+        <div class="orb-window"><span class="brand-mark"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-tight">
+    <div class="container stats-bar">
+      <div class="stat reveal"><strong data-count="2.4" data-decimals="1" data-suffix="M">0</strong><span>Active accounts</span></div>
+      <div class="stat reveal"><strong data-count="480" data-suffix="K">0</strong><span>Discord members</span></div>
+      <div class="stat reveal"><strong data-count="12" data-suffix="M">0</strong><span>Sessions launched</span></div>
+      <div class="stat reveal"><strong data-count="4.9" data-decimals="1" data-suffix="/5">0</strong><span>Average rating</span></div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Inside the Client</span>
+        <h2 style="margin-top:16px;">Built for how you actually play</h2>
+        <p>Every screen, panel and animation is designed to stay out of your way — and look good doing it.</p>
+      </div>
+      <div class="gallery-scroll reveal">
+        <div class="showcase">
+          <div class="showcase-inner">
+            <div class="showcase-chrome"><span></span><span></span><span></span></div>
+            <span class="text-secondary" style="font-family:var(--font-head);font-size:14px;">Home Dashboard</span>
+          </div>
+        </div>
+        <div class="showcase">
+          <div class="showcase-inner">
+            <div class="showcase-chrome"><span></span><span></span><span></span></div>
+            <span class="text-secondary" style="font-family:var(--font-head);font-size:14px;">Cosmetics Loadout</span>
+          </div>
+        </div>
+        <div class="showcase">
+          <div class="showcase-inner">
+            <div class="showcase-chrome"><span></span><span></span><span></span></div>
+            <span class="text-secondary" style="font-family:var(--font-head);font-size:14px;">Performance HUD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES TEASER -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why DLI</span>
+        <h2 style="margin-top:16px;">One account. The whole ecosystem.</h2>
+        <p>The launcher, client, cosmetics and community all speak the same language — because they're built by the same team.</p>
+      </div>
+      <div class="grid grid-3 reveal-stagger">
+        <div class="card reveal" style="--i:0">
+          <div class="card-icon">⟡</div>
+          <h3>Instant updates</h3>
+          <p>The launcher verifies and patches files in the background, so you're always on the latest build without lifting a finger.</p>
+        </div>
+        <div class="card reveal" style="--i:1">
+          <div class="card-icon">◈</div>
+          <h3>Tuned performance</h3>
+          <p>The client is profiled release over release to cut frame time and load stutters on both high-end and modest rigs.</p>
+        </div>
+        <div class="card reveal" style="--i:2">
+          <div class="card-icon">✦</div>
+          <h3>Cloud profiles</h3>
+          <p>Your settings, cosmetics and progress follow you to any machine the moment you sign in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Player voices</span>
+        <h2 style="margin-top:16px;">Trusted by a community that plays daily</h2>
+      </div>
+      <div class="grid grid-3 reveal-stagger">
+        <div class="testimonial card reveal" style="--i:0">
+          <p>"The launcher just works. I forgot what it felt like to not think about updates."</p>
+          <div class="testimonial-meta"><span class="avatar"></span><div><strong>Maren K.</strong><span>Player since Season 01</span></div></div>
+        </div>
+        <div class="testimonial card reveal" style="--i:1">
+          <p>"DLI feels like software someone actually designed, not just shipped."</p>
+          <div class="testimonial-meta"><span class="avatar"></span><div><strong>Théo B.</strong><span>Community moderator</span></div></div>
+        </div>
+        <div class="testimonial card reveal" style="--i:2">
+          <p>"Cloud profiles saved me hours setting up a new PC. Everything was just there."</p>
+          <div class="testimonial-meta"><span class="avatar"></span><div><strong>Ingrid S.</strong><span>Player since Season 02</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ PREVIEW -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Common questions</span>
+        <h2 style="margin-top:16px;">Quick answers</h2>
+      </div>
+      <div class="reveal" style="max-width:760px;">
+        <div class="accordion-item">
+          <button class="accordion-trigger"><span>Is DLI free to download and play?</span><span class="plus"></span></button>
+          <div class="accordion-panel"><p>Yes. The launcher, client and core platform are free. Cosmetics and seasonal content are optional.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger"><span>Which platforms are supported?</span><span class="plus"></span></button>
+          <div class="accordion-panel"><p>DLI currently supports Windows 10 and 11, with macOS and Linux builds in active development.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger"><span>Do I need a separate account for each game?</span><span class="plus"></span></button>
+          <div class="accordion-panel"><p>No. One DLI account carries your profile, cosmetics and progress across every game on the platform.</p></div>
+        </div>
+      </div>
+      <div class="reveal" style="margin-top:28px;"><a href="faq.html" class="btn btn-ghost">View full FAQ</a></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-banner reveal">
+        <span class="eyebrow">Ready when you are</span>
+        <h2 style="margin-top:18px;">Join 2.4M players already on DLI</h2>
+        <p>Download the launcher and be in your first session in under two minutes.</p>
+        <div class="cta-row">
+          <a href="download.html" class="btn btn-primary btn-lg">Download for Windows</a>
+          <a href="community.html" class="btn btn-ghost btn-lg">Join the Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>DLI</a>
+        <p>A premium gaming ecosystem — launcher, client, cosmetics and community, built as one platform.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="launcher.html">Launcher</a>
+        <a href="client.html">Client</a>
+        <a href="features.html">Features</a>
+        <a href="cosmetics.html">Cosmetics</a>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <a href="community.html">Overview</a>
+        <a href="community.html#changelog">Changelog</a>
+        <a href="community.html#events">Events</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get started</h4>
+        <a href="download.html">Download</a>
+        <a href="download.html#requirements">System requirements</a>
+        <a href="download.html#install">Installation guide</a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> DLI Gaming Platform. All rights reserved.</span>
+      <div class="social-row">
+        <a href="community.html" aria-label="Discord">◈</a>
+        <a href="community.html" aria-label="GitHub">⌘</a>
+        <a href="community.html" aria-label="X / Twitter">✦</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
