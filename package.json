@@ -5,13 +5,15 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "build": "node scripts/optimize-assets.mjs && vite build && esbuild client/src/entry-server.tsx --bundle --splitting --platform=node --format=esm --packages=external --jsx=automatic --alias:@=./client/src --alias:@shared=./shared --outdir=dist/server --out-extension:.js=.mjs --entry-names=entry-server && node scripts/prerender.mjs && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
@@ -45,7 +47,6 @@
     "cmdk": "^1.1.1",
     "embla-carousel-react": "^8.6.0",
     "express": "^4.21.2",
-    "framer-motion": "^12.23.22",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.453.0",
     "nanoid": "^5.1.5",
@@ -80,6 +81,7 @@
     "pnpm": "^10.15.1",
     "postcss": "^8.4.47",
     "prettier": "^3.6.2",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.19.1",
     "tw-animate-css": "^1.4.0",
