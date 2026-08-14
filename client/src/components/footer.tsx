@@ -1,0 +1,7 @@
+// Stil notu: Footer sessiz, düşük kontrastlı ve ürün odaklıdır; mor yalnızca marka işaretinde ve küçük sinyal noktalarında kalır.
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "wouter";
+import { BrandMark } from "./brand-mark";
+import { footerGroups } from "@/lib/site";
+export function Footer() { return <footer className="border-t border-white/8 bg-[#08080A]"><div className="container py-16 sm:py-20"><div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]"><div><BrandMark /><p className="mt-7 max-w-xs text-sm leading-6 text-slate-500">The infrastructure, software and experiences that connect players, creators and communities.</p></div><div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3">{footerGroups.map((group) => <div key={group.title}><p className="eyebrow text-slate-600">{group.title}</p><ul className="mt-5 space-y-3">{group.links.map((link) => <li key={link.label}>{link.href.startsWith("http") ? <a href={link.href} target="_blank" rel="noreferrer" className="footer-link">{link.label}<ArrowUpRight size={12} /></a> : <Link href={link.href} className="footer-link">{link.label}</Link>}</li>)}</ul></div>)}</div></div><div className="mt-16 flex flex-col justify-between gap-4 border-t border-white/8 pt-6 text-xs text-slate-600 sm:flex-row"><span>© 2026 DLI Studios. Built with intent.</span><span>Dark UI / Purple Signal / Premium Software</span></div></div></footer>; }
+

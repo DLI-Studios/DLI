@@ -1,0 +1,4 @@
+// Stil notu: 404 sayfası aynı premium ürün kabuğu içinde kısa, net ve kolay kaçışlı tutulur.
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { Link } from "wouter";
+export default function NotFound() { return <div className="min-h-[65vh] surface-grid"><div className="container flex min-h-[65vh] flex-col justify-center py-24"><p className="eyebrow text-violet-300">ERROR / 404</p><h1 className="display-title mt-6 max-w-2xl">This surface does not exist yet.</h1><p className="mt-7 max-w-md text-base leading-7 text-slate-400">The page you’re looking for may have moved, or it may be a layer we have not built yet.</p><div className="mt-9 flex flex-wrap gap-4"><Link href="/" className="button button--primary"><ArrowLeft size={15} /> Back home</Link><Link href="/products" className="button button--ghost">Explore products <ArrowUpRight size={15} /></Link></div></div></div>; }
