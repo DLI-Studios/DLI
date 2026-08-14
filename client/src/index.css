@@ -35,11 +35,8 @@
   .mobile-nav { display: none; border-top: 1px solid rgb(255 255 255 / 0.08); background: #0B0B10; }
   .mobile-nav--open { display: block; }
   .mobile-nav__link { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgb(255 255 255 / 0.06); padding: 1rem 0; color: #e8e8ed; font-size: 0.95rem; }
-  .brand-mark { position: relative; display: inline-block; height: 32px; width: 64px; overflow: hidden; border: 1px solid rgb(255 255 255 / 0.16); background: #0B0B10; }
+  .brand-mark { position: relative; display: inline-block; height: 36px; width: 36px; overflow: hidden; border: 1px solid rgb(255 255 255 / 0.16); background: #0B0B10; }
   .brand-mark__image { position: relative; z-index: 1; height: 100%; width: 100%; object-fit: cover; object-position: center; }
-  .brand-mark__fallback { position: absolute; inset: 0; }
-  .brand-mark__stroke { position: absolute; left: 7px; top: 6px; height: 16px; width: 9px; border: 2px solid white; border-right: 0; }
-  .brand-mark__signal { position: absolute; right: 4px; top: 6px; height: 16px; width: 2px; background: #8B5CF6; transform: skew(-28deg); }
   .display-title { font-family: var(--font-display); font-size: clamp(3.25rem, 7vw, 7.8rem); font-weight: 600; line-height: 0.95; letter-spacing: -0.075em; color: #fff; }
   .display-title--hero { max-width: 730px; font-size: clamp(3.8rem, 7.8vw, 8.3rem); }
   .section-title { font-family: var(--font-display); font-size: clamp(2.6rem, 5vw, 5.2rem); font-weight: 600; line-height: 0.98; letter-spacing: -0.07em; color: #fff; }
